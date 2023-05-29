@@ -1,0 +1,181 @@
+@media (max-width: 1220px) {
+  .header-nav li {
+    margin: 0 10px;
+  }
+  .socials {
+    a {
+      margin-left: 10px;
+    }
+  }
+  .slider-content {
+    padding-right: 0;
+    img {
+      width: 100%;
+      min-width: 300px;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .flip-card-back ul {
+    margin-bottom: 1.6rem;
+  }
+  .flip-card-back li {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1050px) {
+  html {
+    font-size: 18px;
+  }
+  .socials {
+    display: none;
+  }
+  .flip-card,
+  .info-box__item {
+    min-height: 560px;
+  }
+  .flip-card-back button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0.9rem);
+  }
+  .flip-card-front::after,
+  .info-box__item::after {
+    height: 80%;
+  }
+}
+@media (max-width: 1015px) {
+  .info-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .info-box__item,
+  .flip-card {
+    width: 26.5rem;
+    min-height: 31rem;
+  }
+}
+@media (max-width: 915px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 32px;
+    .logo {
+      order: 1;
+    }
+    .contact-info {
+      order: 2;
+    }
+    p {
+      order: 3;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 830px) {
+  html {
+    font-size: 16px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+  .slider .slide__text {
+    min-width: 380px;
+    margin-right: 40px;
+  }
+  .flip-card-front,
+  .info-box__item {
+    padding: 0;
+  }
+  .flip-card-front {
+    svg {
+      width: 100%;
+    }
+  }
+  .info-box__content {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .slider {
+    min-height: 530px;
+    width: 85%;
+    margin: auto;
+    border-radius: 24px;
+    .slide:nth-child(2) {
+      background: url("../img/dog-bkg.jpeg") 0 / cover;
+    }
+  }
+  .header-main::after,
+  .slider-controls {
+    display: none;
+  }
+  .slider-content {
+    flex-direction: column;
+    padding-top: 32px;
+    img {
+      position: absolute;
+      min-width: 150px;
+      width: 44%;
+      right: -62px;
+      bottom: 0;
+    }
+  }
+  .slide {
+    .slide__text {
+      min-width: 100%;
+      transform: translateY(0);
+      margin-right: 0;
+    }
+  }
+
+  .dots {
+    display: flex;
+  }
+  .form {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  .slider {
+    min-height: 420px;
+    .slide {
+      &__header {
+        font-size: 1.71rem;
+        line-height: 2.26rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.35rem;
+      }
+      &:nth-child(2) p:nth-child(3) {
+        font-size: 1.28rem;
+        line-height: 1.57rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media (max-width: 405px) {
+  .slider {
+    .slide:nth-child(2) {
+      background-position: 25%;
+
+      .slide-btn {
+        transform: translateY(23vw);
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  .info-box__item,
+  .flip-card {
+    min-height: 35rem;
+  }
+}

@@ -1,0 +1,191 @@
+.header {
+  position: relative;
+  margin-bottom: 70px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0 1.6rem;
+  color: $grey;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+.header-nav {
+  ul {
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.4rem;
+    display: flex;
+  }
+  li {
+    margin: 0 20px;
+    padding: 8px 0;
+  }
+}
+.socials {
+  a {
+    margin-left: 25px;
+  }
+}
+
+.header-main {
+  position: relative;
+  &::after {
+    content: "";
+    background: url("../img/header-bottom.svg") center/cover no-repeat;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 155px;
+    bottom: -2px;
+    left: 0;
+    z-index: 3;
+  }
+}
+.slider {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: transform 1s linear;
+    &:first-child {
+      background-color: $primary;
+      color: $secondary;
+      z-index: 2;
+    }
+    &:nth-child(2) {
+      background: url("../img/dog-bkg@1.5x.jpg") 30% / cover;
+      color: $primary;
+      p:nth-child(3) {
+        font-size: 2.1rem;
+        line-height: 2.55rem;
+        font-weight: 600;
+      }
+      .slide-btn {
+        background-color: $primary;
+      }
+    }
+    &__text {
+      max-width: 606px;
+      position: relative;
+      transform: translateY(-30px);
+    }
+    &__header {
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3.05rem;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+    }
+    &-btn {
+      @include button;
+      &_gradient {
+        position: relative;
+        background: $gradient;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+    min-height: 600px;
+    padding-right: 7%;
+  }
+}
+// Управление слайдером
+.slider-controls {
+  position: relative;
+  z-index: 3;
+  button {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $white;
+    transition: all 0.3s linear;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .next-btn {
+    right: 0;
+  }
+}
+.dots {
+  display: none;
+  justify-content: center;
+  margin-top: 16px;
+  &__dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: $secondary;
+    border-radius: 50%;
+    margin: 0 4px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    &--active {
+      background-color: $primary;
+    }
+  }
+}
+
+//Burger btn/menu
+.burger-btn {
+  display: none;
+}
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+  color: $secondary;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  transition: opacity 0.3s linear;
+  z-index: 11;
+  li {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.buger-close {
+  position: absolute;
+  top: 30px;
+  right: 32px;
+}

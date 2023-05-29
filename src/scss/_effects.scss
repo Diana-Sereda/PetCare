@@ -1,0 +1,148 @@
+// nav ссылки при наведении
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: $gradient;
+  transition: width 0.3s ease;
+}
+
+.underline:hover::after,
+.underline:focus::after {
+  width: 100%;
+}
+
+// flip card "консультация с терапевтом"
+.flip-card {
+  width: 48%;
+  min-height: 630px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  color: $white;
+  background: url("../img/consult-1.jpeg") center/cover no-repeat;
+  position: relative;
+  transition: opacity 0.8s;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $grey 100%);
+  }
+  h3 {
+    max-width: 380px;
+    margin-bottom: 35px;
+  }
+}
+
+.flip-card:hover .flip-card-front {
+  opacity: 0;
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  padding: 0 2rem;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  padding: 2rem;
+  transform: rotateY(180deg);
+  h3 {
+    color: $primary;
+    max-width: 383px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.95rem;
+    color: $secondary;
+    margin-bottom: 1.2rem;
+  }
+  ul {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.35rem;
+    color: $grey;
+    margin-bottom: 2.8rem;
+  }
+  li {
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding: 0.85rem 0 0.75rem 3.5rem;
+    &::before {
+      content: "";
+      background: url("../img/check.svg") center/cover;
+      width: 2.8rem;
+      height: 2.8rem;
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      padding: 0;
+      padding-left: 3.5rem;
+    }
+  }
+  button {
+    background: $primary;
+    @include button;
+    width: 17.25rem;
+  }
+}
+
+// Кнопка "Связаться с нами" при наведении
+.slide-btn_gradient {
+  position: relative;
+}
+
+.slide-btn_gradient:hover {
+  background: $gradient-hover;
+  background-size: 400%;
+}
+
+.slide-btn_gradient:hover {
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
