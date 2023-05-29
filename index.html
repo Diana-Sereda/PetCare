@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230530010713">
+  <title>PetCare</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header-top">
+      <div class="burger-btn">
+        <svg width="32px" height="22px">
+          <use xlink:href="img/icons.svg#burger"></use>
+        </svg>
+      </div>
+      <nav class="burger-menu hidden">
+        <svg width="24px" height="24px" class="buger-close">
+          <use xlink:href="img/icons.svg#close2"></use>
+        </svg>
+        <ul>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="logo">
+        <svg>
+          <use xlink:href="img/icons.svg#logo"></use>
+        </svg>
+        <span>PetCare</span></a>
+      <nav class="header-nav">
+        <ul>
+          <li class="underline"><a href="#">Новости</a></li>
+          <li class="underline"><a href="#">О нас</a></li>
+          <li class="underline"><a href="#">Блог</a></li>
+          <li class="underline"><a href="#">Услуги</a></li>
+          <li class="underline"><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a href="#">
+          <svg width="40px" height="40px">
+            <use xlink:href="img/icons.svg#inst"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="40px" height="40px">
+            <use xlink:href="img/icons.svg#tg"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="40px" height="40px">
+            <use xlink:href="img/icons.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="slider">
+      <div class="slide">
+        <div class="container">
+          <div class="slider-content">
+            <div class="slide__text">
+              <h1 class="slide__header">Мы заботимся
+                о ваших питомцах</h1>
+              <p>Записывайтесь в ветклиники
+                и консультируйтесь с ветеринарным врачом онлайн</p>
+              <a href="#footer" class="slide-btn slide-btn_gradient">Связаться с нами</a>
+            </div>
+            <picture>
+              <img src="img/cat.png" srcset="img/cat@2x.png 2x" alt="Изображение серого полосатого кота">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <div class="slider-content">
+            <div class="slide__text">
+              <h2 class="slide__header">Закажите план заботы</h2>
+              <p>Регулярная доставка специально подобранного корма и других товаров для кошек и собак</p>
+              <p>от 1299 ₽/мес</p>
+              <button class="slide-btn pop-up-btn">Подобрать план</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls container">
+        <button id="nextBtn" class="next-btn">
+          <svg width="13px" height="22px">
+            <use xlink:href="img/icons.svg#next"></use>
+          </svg>
+        </button>
+
+        <button id="prevBtn" class="prev-btn">
+          <svg width="12px" height="23px">
+            <use xlink:href="img/icons.svg#prev"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div class="dots">
+    </div>
+  </div>
+  </div>
+</header>
+  <main>
+    <section class="info-box container">
+      <article class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="info-box__content">
+              <h3>Сколько стоит онлайн-консультация
+                с терапевтом?</h3>
+              <!-- <svg height="25px">
+                <use xlink:href="img/icons.svg#arrow"></use>
+              </svg> -->
+              <!-- Arrow  -->
+              <svg id="arrow" viewBox="0 0 231 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M230.707 8.70711C231.098 8.31658 231.098 7.68342 230.707 7.29289L224.343 0.928932C223.953 0.538408 223.319 0.538408 222.929 0.928932C222.538 1.31946 222.538 1.95262 222.929 2.34315L228.586 8L222.929 13.6569C222.538 14.0474 222.538 14.6805 222.929 15.0711C223.319 15.4616 223.953 15.4616 224.343 15.0711L230.707 8.70711ZM0 9H230V7H0V9Z"
+                  fill="white" />
+              </svg>
+              <!-- Arrow  -->
+
+            </div>
+
+          </div>
+          <div class="flip-card-back">
+            <h3>Онлайн-консультация
+              с терапевтом</h3>
+            <p>от 399 ₽</p>
+            <ul>
+              <li>Аудио, видео или чат</li>
+              <li>Продолжительность до 60 минут</li>
+              <li>Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</li>
+            </ul>
+            <button>Начать консультацию</button>
+          </div>
+        </div>
+      </article>
+      <article class="info-box__item">
+        <div class="info-box__content">
+          <h3>Самые болезненные породы кошек: топ-5</h3>
+          <p>Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.</p>
+          <a href="#" class="underline">Все статьи о кошках</a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+  <div class="overlay hidden"></div>
+<form action="#" class="form pop-up hidden">
+  <button class="close-btn">
+    <svg width="24px" height="24px">
+      <use xlink:href="img/icons.svg#close"></use>
+    </svg>
+  </button>
+  <h4>Чтобы подобрать план,<br>
+    необходимо заполнить форму ниже</h4>
+  <h5>У меня:</h5>
+  <label>
+    <input type="radio" name="animal">
+    <span class="radio-mark"></span>
+    Кошка
+  </label>
+  <label>
+    <input type="radio" name="animal">
+    <span class="radio-mark"></span>
+    Собака
+  </label>
+  <input type="text" placeholder="Имя питомца">
+  <input type="text" placeholder="Порода питомца*" required>
+  <input type="text" placeholder="Возраст питомца*" required>
+  <input type="tel" placeholder="Ваш номер телефона">
+  <input type="email" placeholder="Ваш email*" required>
+  <button class="submit">Отправить</button>
+
+</form>
+  <footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="contact-info">
+        <a href="tel:+78009998877">8 (800) 999-88-77</a>
+        <a href="mailto:info@petcare.com">info@petcare.com</a>
+      </div>
+      <p>©2021 PetCare. Все права защищены</p>
+      <a href="index.html" class="logo">
+        <svg>
+          <use xlink:href="img/icons.svg#logo2"></use>
+        </svg>
+        <span>PetCare</span></a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Минимизированный файл js  -->
+  <script src="js/script.min.js?_v=20230530010713"></script>
+</body>
+
+</html>
