@@ -1,0 +1,30 @@
+$primary: #394573;
+$secondary: #bee7e8;
+$icon-clr: #726da8;
+
+$white: #ffffff;
+$grey: #333333;
+
+$gradient: linear-gradient(90deg, #a0d2db 0%, #726da8 100%);
+$gradient-hover: linear-gradient(
+  90deg,
+  #a0d2db,
+  #93b5cc,
+  #7b80b2,
+  #726da8,
+  #7b80b2,
+  #93b5cc,
+  #a0d2db
+);
+
+@mixin button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  width: 15rem;
+  text-align: center;
+  border-radius: 40px;
+  padding: 0.85rem 0;
+  color: $white;
+}

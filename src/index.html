@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"PetCare"
+})
+
+<body>
+  @@include('html/header.html',{})
+  <main>
+    <section class="info-box container">
+      <article class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="info-box__content">
+              <h3>Сколько стоит онлайн-консультация
+                с терапевтом?</h3>
+              <!-- <svg height="25px">
+                <use xlink:href="@img/icons.svg#arrow"></use>
+              </svg> -->
+              <!-- Arrow  -->
+              <svg id="arrow" viewBox="0 0 231 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M230.707 8.70711C231.098 8.31658 231.098 7.68342 230.707 7.29289L224.343 0.928932C223.953 0.538408 223.319 0.538408 222.929 0.928932C222.538 1.31946 222.538 1.95262 222.929 2.34315L228.586 8L222.929 13.6569C222.538 14.0474 222.538 14.6805 222.929 15.0711C223.319 15.4616 223.953 15.4616 224.343 15.0711L230.707 8.70711ZM0 9H230V7H0V9Z"
+                  fill="white" />
+              </svg>
+              <!-- Arrow  -->
+
+            </div>
+
+          </div>
+          <div class="flip-card-back">
+            <h3>Онлайн-консультация
+              с терапевтом</h3>
+            <p>от 399 ₽</p>
+            <ul>
+              <li>Аудио, видео или чат</li>
+              <li>Продолжительность до 60 минут</li>
+              <li>Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</li>
+            </ul>
+            <button>Начать консультацию</button>
+          </div>
+        </div>
+      </article>
+      <article class="info-box__item">
+        <div class="info-box__content">
+          <h3>Самые болезненные породы кошек: топ-5</h3>
+          <p>Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.</p>
+          <a href="#" class="underline">Все статьи о кошках</a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+  @@include('html/pop-up.html',{})
+  @@include('html/footer.html',{})
+
+  <!-- Минимизированный файл js  -->
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

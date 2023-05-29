@@ -1,0 +1,55 @@
+@import "vars";
+@import "fonts";
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.container {
+  width: 85%;
+  max-width: 1222px;
+  margin: 0 auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+svg {
+  transition: all 0.3s linear;
+}
+svg:hover {
+  transform: scale(1.05);
+}
+.hidden {
+  display: none;
+}
